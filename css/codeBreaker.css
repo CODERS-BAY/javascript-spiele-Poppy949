@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: rgb(12, 129, 47);
+    --secondary:  rgb(32, 111, 148);
+    --tertiary: rgb(255, 165, 0);
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+/*Header*/
+
+header {
+    height: 20vh;
+    background-color: gray;
+    margin: 0 auto;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--primary);
+    width: 100vw;
+}
+
+ul {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+li {
+    padding: 0 10px;
+    margin: 50px 0px;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li:after{
+    transition: width 300ms;
+    background-color: var(--primary);
+    content:'';
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 0%;
+}
+
+nav ul li:hover:after {
+    
+    width: 100%;
+}
+
+/*Spiel*/
+
+
+
+#zahl1, #zahl2, #zahl3 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+}
+
+#runden {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+    width: 120;
+}
+
+.bg_image {
+    height: 80vh;
+    background-image: url(../images/codebg.jpg);
+    background-size: cover;
+    width: 100vw;
+    
+}
+
+#myGame {
+    
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+
+}
+
+.screen {
+    box-shadow: 1px 1px 10px var(--secondary);
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: rgb(29, 27, 25);
+    display: none;
+    font-weight: bold;
+    font-size: 2rem;
+    /*height: 50vh;*/
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 40px;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+    
+}
+
+#screen1 {
+    position: relative;
+}
+
+#screen2 {
+    position: relative;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.button {
+    text-align: center;
+    border-radius: 10px;
+    background-color:var(--secondary);
+    display: inline-block;
+    color: #fff;
+    margin: 20px;
+    padding: 10px;
+}
+
+.popUpButton {
+    text-align: center;
+    border-radius: 10px;
+    background-color:var(--secondary);
+    display: block;
+    color: #fff;
+    margin: 20px;
+    padding: 10px;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--tertiary);
+}
+
+.popUpButton:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+#popUp {
+    background-color: var(--tertiary);
+    border-radius: 10px;
+    display: block;
+    padding: 40px;
+    box-shadow: 1px 1px 10px #777;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20vh;
+    width: 300px;
+    text-align: center;
+}
+
+#popUp2 {
+    background-color: var(--tertiary);
+    border-radius: 10px;
+    display: block;
+    padding: 40px;
+    box-shadow: 1px 1px 10px #777;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20vh;
+    width: 300px;
+    text-align: center;
+}
+
+#result1, #result1a, #result1b {
+    color: #fff;
+}

@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: rgb(50, 132, 134);
+    --secondary:  rgb(10, 62, 63);
+    --tertiary: rgb(138, 206, 207);
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+header {
+    height: 20vh;
+    background-color: gray;
+    margin: 0 auto;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--primary);
+    width: 100vw;
+}
+
+ul {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+li {
+    padding: 0 10px;
+    margin: 50px 0px;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li:after{
+    transition: width 300ms;
+    background-color: var(--primary);
+    content:'';
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 0%;
+}
+
+nav ul li:hover:after {
+    
+    width: 100%;
+}
+
+
+
+.bg_image {
+    height: 100vh;
+    background-image: url(../images/sspbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    
+}
+
+#myGame {
+    
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+
+}
+
+.screen {
+    box-shadow: 1px 1px 10px var(--secondary);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: rgb(29, 27, 25);
+    display: none;
+    font-weight: bold;
+    font-size: 2rem;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+.button {
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color:var(--secondary);
+    display: inline-block;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--tertiary);
+}
+
+
+.buttonPopUp {
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color:var(--secondary);
+    display: block;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.buttonPopUp:hover {
+    cursor: pointer;
+    background-color: var(--tertiary);
+}
+
+
+
+#runden {
+    font-size: 1.5rem;
+}
+
+#icons {
+    font-size: 5rem;
+}
+
+
+#icons:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    
+}
+
+#newTry {
+    margin: 60px;
+}
+
+.fas {
+    padding: 10px 80px;
+    
+}
+
+.fas:hover {
+    transform: scaleY(1.2);
+}
+
+
+.far {
+    padding: 10px 80px;
+}
+
+.far:hover {
+    transform: scaleY(1.2);
+}
+
+#popUp {
+    background-color: rgb(206, 192, 170);
+    border-radius: 10px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 40px;
+    box-shadow: 1px 1px 10px #777;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30vh;
+    width: 300px;
+    text-align: center;
+}
+

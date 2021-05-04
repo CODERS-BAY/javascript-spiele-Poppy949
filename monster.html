@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Handyweitwurf</title>
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="css/grid.css"/>
+        <link rel="stylesheet" href="css/stylemonster.css">
+    </head>
+
+   
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="monster.html">Handyweitwurf</a></li>
+                    <li><a href="zahlenRaten.html">Zahlenraten</a></li>
+                    <li><a href="ssp.html">Schere,Stein,Papier</a></li>
+                    <li><a href="codeBreaker.html">Codebreaker</a></li>
+                </ul>
+            </nav>
+
+        </header> 
+
+        <main>
+            <div class = "header_image">
+                <div class="textContainer">
+                <h1>Handyweitwurf</h1>
+                <h2>Das Sockenmonster ist in die Galaxie eingedrungen.</h2>
+                <h2>Es klaut beim Wäschewaschen immer einen Socken aus der Maschine.</h2>
+                <h2>Du kannst es vertreiben in dem du ihm dein Handy an den Kopf wirfst.</h2>
+                <h2>Wähle wie oft und von wo aus du spielen möchtest.</h2>
+                </div>  
+            </div>
+        </main>
+    
+
+        <div class="bg_image">   
+        <div class="container">    
+        <div id="spiel">
+
+        <div id="screen1" class="screen active">
+            <h2></h2>
+            <div>Wie oft möchtest du werfen?</div>
+            <input type="number" name="wuerfe" id="wuerfe">
+            <div>Wo bist du?</div>
+            <div class="row">
+            <select id="planeten">
+                <option value="9.81">Erde</option>
+                <option value="1.62">Mond</option>
+                <option value="3.69">Mars</option>
+                <option value="24.79">Jupiter</option>
+            </select>
+            </div>
+            <i onclick="changeScreen()" class="fas fa-dragon"> Start</i>
+            
+    
+        </div>
+
+        <div id="screen2" class="screen">
+            <h2></h2>
+            <div class="row">
+                Mit wieviel Kraft möchtest du werfen?
+            </div>
+            <div class="row">  
+                <input type="number" name = "weite" id = "wurfWeite" placeholder="Kraft">
+            </div>
+            <div class="row">
+                <label>Winkel</label>
+                </div>
+            <div class="row">
+                <input type="number" name="winkel" id="winkel" placeholder="0 - 90 Grad">     
+            </div>   
+            <div class="row">
+            <i onclick="monsterWurf()" id="dragon" class="fas fa-dragon"> Los!</i>
+            </div> 
+            <p id="result"></p>
+            </div>
+        
+        </div>
+        </div>
+        </div>
+        
+
+        <script type="text/Javascript" src="js/scriptmonster.js"></script>
+    </body>
+</html>>

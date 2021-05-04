@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Schere, Stein, Papier</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/stylessp.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="monster.html">Handyweitwurf</a></li>
+                    <li><a href="zahlenRaten.html">Zahlenraten</a></li>
+                    <li><a href="ssp.html">Schere,Stein,Papier</a></li>
+                    <li><a href="codeBreaker.html">Codebreaker</a></li>
+                </ul>
+            </nav>
+
+        </header> 
+        <div class="bg_image">
+            <div id="myGame">
+                <div id="screen1" class="screen active">
+                    <h1>Schere, Stein, Papier</h1>
+                    <h2>Wähle wieviele Runden du spielen möchtest</h2>
+                    <input type="number" name="runden" id="runden">
+                    <button onclick="changeScreen()" class="button">Eingabe</button>
+                </div>
+
+                <div id="screen2" class="screen">
+                    <h2>Schere, Stein, oder Papier?</h2>
+                        <div id="icons" class="select">
+                            <div class="fas fa-cut fa-spin" onclick="play(1)"></div>
+                            <div class="far fa-gem fa-spin" onclick="play(2)"></div>
+                            <div class="fas fa-scroll fa-spin" onclick="play(3)"></div>
+                        </div>
+                   
+                    <div>
+                        <button id="newTry" onclick="newTry()" class="button">Neues Spiel</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="js/scriptssp.js"></script>  
+    </body>
+
+</html>
