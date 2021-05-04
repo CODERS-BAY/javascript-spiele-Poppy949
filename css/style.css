@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : rgb(54, 14, 165);
+    --secondary: rgb(34, 34, 34);
+    
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+
+
+header {
+    height: 20vh;
+    background-color: gray;
+    margin: 0 auto;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--primary);
+}
+
+ul {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+li {
+    padding: 0 10px;
+    margin: 50px 0px;
+    color: var(--primary);
+}
+
+a {
+    font-size: 1.5rem;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li:after{
+    transition: width 300ms;
+    background-color: var(--primary);
+    content:'';
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 0%;
+}
+
+nav ul li:hover:after {
+    
+    width: 100%;
+}
+
+
+
+body {
+height: 70vh;
+background-color: gold;
+}
+
+#myGame {
+    
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+#screen1 {
+    position: relative;
+    box-shadow: 1px 1px 10px var(--secondary);
+    border-radius: 10px;
+    background-color: var(--primary);
+    color:#fff;
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+}
+

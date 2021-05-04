@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary:  rgb(103, 85, 207);
+    --secondary: rgb(62, 37, 204);
+    --tertiary: rgb(143, 132, 206);
+}
+
+header {
+    height: 20vh;
+    background-color: var(--tertiary);
+    margin: 0 auto;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--primary);
+    width: 100vw;
+}
+
+ul {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+li {
+    padding: 0 10px;
+    margin: 50px 0px;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li:after{
+    transition: width 300ms;
+    background-color: var(--primary);
+    content:'';
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 0%;
+}
+
+nav ul li:hover:after {
+    
+    width: 100%;
+}
+
+.header_image {
+    background-image: url(../images/space.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    
+}
+
+
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: ;
+    margin: 10px;
+}
+
+h2 {
+    color: #fff;
+}
+
+.bg_image {
+    background-image: url(../images/monster.jpg);
+    background-position:center;
+    background-size:cover;
+    background-blend-mode: soft-light;
+    height: 100%;
+
+}
+
+
+#spiel {
+    display: flex;
+    min-height: 50vh;
+    max-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#wuerfe {
+    font-size: 1.5rem;
+    margin: 40px;
+}
+
+#planeten {
+    font-size: 1.5rem;
+}
+
+.screen {
+    box-shadow: 1px 1px 10px var(--secondary);
+    border-radius: 10px;
+    background-color: var(--tertiary);
+    opacity: 0.95;
+    color:#fff;
+    display: none;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 40px;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+    
+}
+
+label {
+    display: block;
+}
+
+.button {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+i {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+i:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.row {
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+
+
+#wurfWeite {
+    font-size: 1.5rem;
+}
+
+#winkel {
+    font-size: 1.5rem;
+}
